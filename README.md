@@ -1,4 +1,4 @@
-[**“Data Science jobs” interactive dashboard**](https://lnkd.in/e-rcYzDq)
+[**“Data Science jobs” interactive dashboard**]([https://lnkd.in/e-rcYzDq](https://ivantravstrm.streamlit.app/))
 
 [**“Jobs and salaries in Data Science” dataset**](https://lnkd.in/eu2KeJuR)
 
