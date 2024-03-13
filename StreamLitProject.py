@@ -112,7 +112,7 @@ if sidebar == 'Overview':
 # top 10 salary figure
     top_salary = df.groupby('job_title')['salary_in_usd'].mean().round().reset_index(name='salary').sort_values(by= 'salary',ascending = False).head(10)
 
-    fig1 = px.bar(top_salary, y='job_title', x='salary', orientation = 'h',  color_discrete_sequence=px.colors.qualitative.Set3)
+    fig1 = px.bar(top_salary, y='job_title', x='salary', orientation = 'h', text_auto = True, color_discrete_sequence=px.colors.qualitative.Set3)
     fig1.update_layout(
     title='Top 10 Jobs by Salary',  # Add title here
     xaxis_title=None,  # Removes the x-axis label
@@ -122,7 +122,7 @@ if sidebar == 'Overview':
 
 # top 10 job number figure
     top_number = df.groupby('job_title').size().reset_index(name='nb_jobs').sort_values(by='nb_jobs', ascending=False).head(10)
-    fig2 = px.bar(top_number, y = 'job_title', x='nb_jobs', orientation= 'h', color_discrete_sequence=px.colors.qualitative.Set3)
+    fig2 = px.bar(top_number, y = 'job_title', x='nb_jobs', orientation= 'h', text_auto = True, color_discrete_sequence=px.colors.qualitative.Set3)
     fig2.update_layout(
     title='Top 10 Jobs by Job Number', 
     xaxis_title=None,  
@@ -155,7 +155,7 @@ if sidebar == 'Overview':
                   color_discrete_map={'Entry-level':'lightcyan',
                                  'Executive':'#5c9b90',
                                  'Mid-level':'#d2f0eb',
-                                 'Senior':'#8dd3c7'})
+                                 'Senior':'#8dd3c7'}, text_auto = True)
     fig4.update_layout(
     title='Salaries by experience level', 
     xaxis_title=None,  
@@ -188,7 +188,7 @@ if sidebar == 'Overview':
     fig6 = px.bar(companies, y = 'average salary', x='company_size', orientation= 'v', color = 'company_size',
                   color_discrete_map={'L':'lightcyan',
                                     'M':'#8dd3c7',
-                                    'S':'#5c9b90'})
+                                    'S':'#5c9b90'}, text_auto = True)
     fig6.update_layout(
     title='Salaries by company size', 
     xaxis_title=None,  
@@ -237,7 +237,7 @@ if sidebar =='Jobs by Country':
 
 # Average Salary by Countries
     salary_country = df.groupby('employee_residence')['salary_in_usd'].mean().round().sort_values(ascending =False).head(15).reset_index(name='salary')
-    fig7 = px.bar(salary_country, x='employee_residence', y='salary', color_discrete_sequence=px.colors.qualitative.Set3)
+    fig7 = px.bar(salary_country, x='employee_residence', y='salary', text_auto = True, color_discrete_sequence=px.colors.qualitative.Set3)
     fig7.update_layout(
     title='Average Salary by Countries', 
     xaxis_title=None,  
@@ -248,7 +248,7 @@ if sidebar =='Jobs by Country':
 # Job Numbers by Countries
     nb_job_country = df.groupby(['employee_residence','work_year']).size().sort_values(ascending = False).head(15).reset_index(name = 'nb_jobs')
 
-    fig8 = px.bar(nb_job_country, x='employee_residence', y='nb_jobs', color='work_year')
+    fig8 = px.bar(nb_job_country, x='employee_residence', y='nb_jobs', color='work_year',text_auto = True)
     fig8.update_layout(
     title='Job Numbers by Countries', 
     xaxis_title=None,  
