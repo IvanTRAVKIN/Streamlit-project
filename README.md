@@ -1,4 +1,8 @@
 Streamlit project Em Lyon
+[**“Data Science jobs” interactive dashboard**](https://lnkd.in/e-rcYzDq)
+
+[**“Jobs and salaries in Data Science” dataset**](https://lnkd.in/eu2KeJuR)
+
 # Data Science Careers Demystified: An Interactive Dashboard by Data Science Students 🚀
 
 Understanding the data jobs landscape is crucial for landing your dream data science role. As a data science student, Sijie ZHU, Ivan TRAVKIN, and I, created a user-friendly tool, built with Python's Streamlit library, leveraging a high-quality dataset on "Jobs and Salaries in Data Science" from Kaggle.
