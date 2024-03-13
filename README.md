@@ -1,6 +1,6 @@
 Streamlit project Em Lyon
-[**“Data Science jobs” interactive dashboard**](https://lnkd.in/e-rcYzDq)
-[**“Jobs and salaries in Data Science” dataset**](https://lnkd.in/eu2KeJuR)
+**“Data Science jobs” interactive dashboard** (https://lnkd.in/e-rcYzDq)
+**“Jobs and salaries in Data Science” dataset** (https://lnkd.in/eu2KeJuR)
 
 # Data Science Careers Demystified: An Interactive Dashboard by Data Science Students 🚀
 
