@@ -248,7 +248,7 @@ if sidebar =='Jobs by Country':
 # Job Numbers by Countries
     nb_job_country = df.groupby(['employee_residence','work_year']).size().sort_values(ascending = False).head(15).reset_index(name = 'nb_jobs')
 
-    fig8 = px.bar(nb_job_country, x='employee_residence', y='nb_jobs', color='work_year',text_auto = True)
+    fig8 = px.bar(nb_job_country, x='employee_residence', y='nb_jobs', color='work_year')
     fig8.update_layout(
     title='Job Numbers by Countries', 
     xaxis_title=None,  
