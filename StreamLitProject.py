@@ -112,7 +112,7 @@ if sidebar == 'Overview':
 # top 10 salary figure
     top_salary = df.groupby('job_title')['salary_in_usd'].mean().round().reset_index(name='salary').sort_values(by= 'salary',ascending = False).head(10)
 
-    fig1 = px.bar(top_salary, y='job_title', x='salary', orientation = 'h', text_auto = True, color_discrete_sequence=px.colors.qualitative.Set3)
+    fig1 = px.bar(top_salary, y='job_title', x='salary', orientation = 'h',  color_discrete_sequence=px.colors.qualitative.Set3)
     fig1.update_layout(
     title='Top 10 Jobs by Salary',  # Add title here
     xaxis_title=None,  # Removes the x-axis label
@@ -122,7 +122,7 @@ if sidebar == 'Overview':
 
 # top 10 job number figure
     top_number = df.groupby('job_title').size().reset_index(name='nb_jobs').sort_values(by='nb_jobs', ascending=False).head(10)
-    fig2 = px.bar(top_number, y = 'job_title', x='nb_jobs', orientation= 'h', text_auto = True, color_discrete_sequence=px.colors.qualitative.Set3)
+    fig2 = px.bar(top_number, y = 'job_title', x='nb_jobs', orientation= 'h', color_discrete_sequence=px.colors.qualitative.Set3)
     fig2.update_layout(
     title='Top 10 Jobs by Job Number', 
     xaxis_title=None,  
